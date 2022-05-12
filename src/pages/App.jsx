@@ -20,7 +20,7 @@ const App = () => {
     <div className="App">
       <Header title="AI Grammer corrector." />
       <main>
-        <Form onChange={onChange} />
+        <Form onChange={onChange} value={values} />
         <Result values={values} />
       </main>
     </div>
