@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import Header from "../components/Header"
 import Form from "../components/Form"
 import Result from "../components/Result"
@@ -5,12 +7,21 @@ import Result from "../components/Result"
 import ".././App.css"
 
 const App = () => {
+  const [values, setValues] = useState("")
+
+  const onChange = (event) => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value
+    })
+  }
+
   return (
     <div className="App">
       <Header title="AI Grammer corrector." />
       <main>
-        <Form />
-        <Result />
+        <Form onChange={onChange} />
+        <Result values={values} />
       </main>
     </div>
   )
