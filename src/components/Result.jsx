@@ -1,6 +1,6 @@
 const Result = () => (
-  <div>
-    <h2>Responses</h2>
+  <div className="Responses">
+    <h2 className="Responses__title">Responses</h2>
     <ul>
       <li>Dummy text</li>
       <li>Dummy text</li>
