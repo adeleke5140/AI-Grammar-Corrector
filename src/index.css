@@ -9,6 +9,11 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Punta Regular";
+  src: url(./fonts/Punta\ Flat\ Regular.ttf);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
