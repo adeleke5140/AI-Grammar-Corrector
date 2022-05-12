@@ -7,11 +7,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  font-family: var(--font-family2);
+  background-color: var(--bg-color);
+}
+
+:root {
+  --font-family1: "Punta Regular", sans-serif;
+  --font-family2: "Satoshi", sans-serif;
+  --bg-color: #fdf9ee;
+
+  --primary-color1: #500740;
+  --primary-color2: #fff0d7;
+  --accent-color1: #15c073;
+  --accent-color2: #fff;
 }
 
 @font-face {
   font-family: "Punta Regular";
-  src: url(./fonts/Punta\ Flat\ Regular.ttf);
+  src: url("fonts/punta/PuntaRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/satoshi/Satoshi-Regular.ttf") format("truetype");
+  src: url("fonts/satoshi/Satoshi-Regular.woff") format("woff"),
+    url("fonts/satoshi/Satoshi-Regular.woff2") format("woff2"),
+    url("fonts/satoshi/Satoshi-Regular.eot") format("embedded-opentype");
 }
 
 code {
