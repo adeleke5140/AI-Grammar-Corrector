@@ -1,0 +1,26 @@
+.App {
+  padding: 0 1.3em 0 1.3em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  display: block;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  width: 100%;
+  resize: both;
+}
+
+.form__submit {
+  align-self: flex-end;
+}
